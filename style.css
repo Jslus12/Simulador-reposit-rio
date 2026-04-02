@@ -1,0 +1,157 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #cfcfcf, #a9a9a9);
+}
+
+.banner{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2b2b2b, #4a4a4a);
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+main{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.categoria{
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    main{
+        width: 60%;
+    }
+
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+.produto{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.produto:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.preco{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    margin: 1rem 0;
+}
+
+.Adicionar{
+    background: linear-gradient(135deg, #4f4f4f, #2f2f2f);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 2.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Adicionar:hover{
+    background: linear-gradient(135deg, #2f2f2f, #000);
+    transform: scale(1.05);
+}
+
+#Orçamento{
+    background: linear-gradient(135deg, #2b2b2b, #4a4a4a);
+    color: #fff;
+    padding: 1.8rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 500px;
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* LISTA */
+#lista-pedido{
+    padding: 0;
+    list-style: none;
+}
+
+#lista-pedido li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255,255,255,0.08);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+/* TOTAL */
+#total{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+#Finalizar-pedido{
+    background: linear-gradient(135deg, #4f4f4f, #2f2f2f);
+    color: white;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+#Finalizar-pedido:hover{
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #3a3a3a, #000);
+}
+
+.remover{
+    background-color: #000000;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remover:hover{
+    background-color: #cc0000;
+}
+
+#Contatos{
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color:#fff;
+    margin-top: 2rem;
+}
