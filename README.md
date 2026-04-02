@@ -20,6 +20,8 @@ O **Simulador de Orçamento Freelancer J.P.T.I** permite que o usuário:
 
 Tudo isso de forma dinâmica, sem recarregar a página.
 
+![Imagem](imagem.png)
+
 ---
 
 ## 🧠 Conceitos Aplicados
